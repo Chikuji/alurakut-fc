@@ -6,6 +6,7 @@ import Box from '../src/components/Box'
 import { AlurakutMenu, AlurakutProfileSidebarMenuDefault, OrkutNostalgicIconSet } from '../src/lib/AlurakutCommons';
 import { ProfileRelationsBoxWrapper } from '../src/components/ProfileRelations';
 
+
 function ProfileSidebar(propriedades) {
   return (
     <Box as="aside">
@@ -47,6 +48,7 @@ function ProfileRelationsBox(propriedades) {
 }
 
 export default function Home(props) {
+
   const usuarioAleatorio = props.githubUser;
   const [comunidades, setComunidades] = React.useState([]);
   // const comunidades = comunidades[0];
@@ -120,6 +122,7 @@ export default function Home(props) {
             <h1 className="title">
               Bem vindo(a) 
             </h1>
+    
 
             <OrkutNostalgicIconSet />
           </Box>
@@ -214,6 +217,8 @@ export default function Home(props) {
             </ul>
           </ProfileRelationsBoxWrapper>
         </div>
+
+
       </MainGrid>
     </>
   )
